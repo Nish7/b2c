@@ -25,6 +25,10 @@
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
         "react/jsx-filename-extension": "off",
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-unused-vars": "warn"
     }
 }
