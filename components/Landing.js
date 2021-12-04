@@ -1,22 +1,41 @@
-import { Box, Text } from '@chakra-ui/layout'
-import RedHighlight from './TextStyles/RedHighlight'
+import { Button } from '@chakra-ui/button'
+import { Box, Flex, Heading, Text } from '@chakra-ui/layout'
 
 function Landing() {
     return (
-        <Box mt={10}>
-            <Text
-                fontSize="9rem"
+        <Box>
+            <Heading
+                fontSize="8xl"
+                fontWeight={700}
                 margin="0 auto"
-                fontWeight="extrabold"
-                letterSpacing="-3px"
                 textAlign="center"
-                lineHeight="1"
+                lineHeight="1.2"
+                // letterSpacing="8px"
             >
-                B2C
+                B to C.
+            </Heading>
+
+            <Text fontSize="md" fontWeight={500} textAlign="center">
+                Indiana University
             </Text>
-            <Text fontSize="md" textAlign="center" fontWeight={900}>
-                at <RedHighlight>Indiana University</RedHighlight>
+
+            <Text
+                fontSize="md"
+                fontWeight={400}
+                textAlign="center"
+                mt={8}
+                mb={7}
+            >
+                student-run marketing organization affiliated <br /> with
+                Impression Personalized
             </Text>
+
+            <Flex justifyContent="space-evenly" alignItems="center">
+                <Button w="49%" mr={2}>
+                    About Us
+                </Button>
+                <Button w="49%">Our Work</Button>
+            </Flex>
         </Box>
     )
 }

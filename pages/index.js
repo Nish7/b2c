@@ -1,12 +1,18 @@
-import { Box } from '@chakra-ui/layout'
+import { Flex } from '@chakra-ui/layout'
 import Landing from '@/components/Landing'
-import BodyInfo from '@/components/BodyInfo'
 
 export default function Home() {
     return (
-        <Box mx="10%" bg="background">
-            <Landing />
-            <BodyInfo />
-        </Box>
+        <>
+            <Flex
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                h="80vh"
+            >
+                <Landing />
+                {/* <BodyInfo /> */}
+            </Flex>
+        </>
     )
 }
