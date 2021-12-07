@@ -1,5 +1,6 @@
 import { Button } from '@chakra-ui/button'
 import { Box, Flex, Heading, Text } from '@chakra-ui/layout'
+import Link from 'next/link'
 
 function Landing() {
     return (
@@ -31,10 +32,14 @@ function Landing() {
             </Text>
 
             <Flex justifyContent="space-evenly" alignItems="center">
-                <Button w="49%" mr={2}>
-                    About Us
-                </Button>
-                <Button w="49%">Our Work</Button>
+                <Link href="/about-us">
+                    <Button w="49%" mr={2}>
+                        About Us
+                    </Button>
+                </Link>
+                <Link href="/soon">
+                    <Button w="49%">Our Work</Button>
+                </Link>
             </Flex>
         </Box>
     )

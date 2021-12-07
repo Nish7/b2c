@@ -1,4 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/layout'
 
 import '@fontsource/raleway/800.css'
 import '@fontsource/raleway/700.css'
@@ -15,7 +16,9 @@ function MyApp({ Component, pageProps }) {
     return (
         <ChakraProvider theme={theme}>
             <Navbar />
-            <Component {...pageProps} />
+            <Box minH="80vh">
+                <Component {...pageProps} />
+            </Box>
             <Footer />
         </ChakraProvider>
     )

@@ -1,8 +1,12 @@
 import { extendTheme } from '@chakra-ui/react'
 
 export default extendTheme({
-    color: {
-        body: 'black',
+    initialColorMode: 'light',
+    useSystemColorMode: false,
+
+    colors: {
+        primary: 'white',
+        background: 'red',
     },
     fonts: {
         heading: 'Raleway',

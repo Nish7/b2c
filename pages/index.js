@@ -8,10 +8,9 @@ export default function Home() {
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
-                h="80vh"
+                h="70vh"
             >
                 <Landing />
-                {/* <BodyInfo /> */}
             </Flex>
         </>
     )
