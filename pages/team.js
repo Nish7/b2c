@@ -1,7 +1,6 @@
 import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/layout'
 import { Image } from '@chakra-ui/react'
 import { NextSeo } from 'next-seo'
-import Link from 'next/link'
 
 function team() {
     return (
