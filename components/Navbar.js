@@ -19,7 +19,7 @@ function Navbar() {
             <Link href="/">
                 <Button variant="ghost">
                     <Text fontFamily="raleway" fontWeight={700} fontSize="xl">
-                        B to C
+                        B2C
                     </Text>
                 </Button>
             </Link>

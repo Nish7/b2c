@@ -13,7 +13,7 @@ function Landing() {
                 lineHeight="1.2"
                 // letterSpacing="8px"
             >
-                B to C.
+                B2C
             </Heading>
 
             <Text fontSize="md" fontWeight={500} textAlign="center">
@@ -27,7 +27,7 @@ function Landing() {
                 mt={8}
                 mb={7}
             >
-                student-run marketing organization affiliated <br /> with
+                student-run sales experience organization affiliated <br /> with
                 Impression Personalized
             </Text>
 
