@@ -2,13 +2,20 @@ import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/layout'
 import { Image } from '@chakra-ui/react'
 import { NextSeo } from 'next-seo'
 
-function team() {
+function team({ hover }) {
     return (
         <>
             <NextSeo title="The Team | B2C" description="Our Team " />
 
             <Box my={10} mx="auto" w="59%">
-                <Heading fontSize="5xl">The Team</Heading>
+                <Heading
+                    onMouseEnter={() => hover(true)}
+                    onMouseLeave={() => hover(false)}
+                    fontSize="5xl"
+                    display="inline-block"
+                >
+                    The Team
+                </Heading>
 
                 <SimpleGrid mt={10} columns={3} spacing={10}>
                     <ImageCard

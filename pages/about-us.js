@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/layout'
 import { NextSeo } from 'next-seo'
 
-function aboutUs() {
+function aboutUs({ hover }) {
     return (
         <>
             <NextSeo
@@ -10,8 +10,16 @@ function aboutUs() {
                 is affiliated with companies such as Impression Personalized, a company that sells personalized gifts to your loved ones. "
             />
 
-            <Box mt={10} mx="auto" w="59%">
-                <Heading fontSize="5xl">About us</Heading>
+            <Box mt={10} mx="auto" w="60%">
+                <Heading
+                    onMouseEnter={() => hover(true)}
+                    onMouseLeave={() => hover(false)}
+                    fontSize="5xl"
+                    display="inline-block"
+                    py={4}
+                >
+                    About us
+                </Heading>
                 <Flex mt={10}>
                     <Text>
                         B to C is a <b>student-run organization</b> at IU that

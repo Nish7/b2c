@@ -2,7 +2,7 @@ import { Flex } from '@chakra-ui/layout'
 import { NextSeo } from 'next-seo'
 import Landing from '@/components/Landing'
 
-export default function Home() {
+export default function Home({ hover }) {
     return (
         <>
             <NextSeo
@@ -15,7 +15,7 @@ export default function Home() {
                 alignItems="center"
                 h="70vh"
             >
-                <Landing />
+                <Landing hover={hover} />
             </Flex>
         </>
     )
