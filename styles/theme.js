@@ -20,7 +20,8 @@ export default extendTheme({
                 mixBlendMode: 'difference',
                 zIndex: 100,
                 pointerEvents: 'none',
-                transition: 'background 0.5s ease-in-out',
+                transition:
+                    'width 0.3s, height 0.3s, background 0.5s ease-in-out',
             },
             '.bigCursor': {
                 width: '100px',
