@@ -7,7 +7,7 @@ function team({ hover }) {
         <>
             <NextSeo title="The Team | B2C" description="Our Team " />
 
-            <Box my={10} mx="auto" w="59%">
+            <Box my={10} mx="auto" w={['80%', '80%', '59%']}>
                 <Heading
                     onMouseEnter={() => hover(true)}
                     onMouseLeave={() => hover(false)}
@@ -17,7 +17,7 @@ function team({ hover }) {
                     The Team
                 </Heading>
 
-                <SimpleGrid mt={10} columns={3} spacing={10}>
+                <SimpleGrid mt={10} columns={[2, 2, 3]} spacing={10}>
                     <ImageCard
                         src="https://bit.ly/dan-abramov"
                         name="Kalp Patel"

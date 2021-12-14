@@ -79,7 +79,7 @@ function HamburgerMenu() {
                                 </Button>
                             </Link>
 
-                            <Link href="/the-team">
+                            <Link href="/">
                                 <Button variant="outline" onClick={onClose}>
                                     <Text fontSize="lg" fontWeight={600}>
                                         Join us
@@ -87,7 +87,7 @@ function HamburgerMenu() {
                                 </Button>
                             </Link>
 
-                            <Link href="/the-team">
+                            <Link href="/">
                                 <Button variant="outline" onClick={onClose}>
                                     <Text fontSize="lg" fontWeight={600}>
                                         Work with us
