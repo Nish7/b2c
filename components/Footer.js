@@ -1,6 +1,6 @@
 import { Button } from '@chakra-ui/button'
-import { Box, Divider, Flex, Text } from '@chakra-ui/layout'
-import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa'
+import { Flex } from '@chakra-ui/layout'
+import { FaFacebook, FaInstagram, FaEnvelope, FaLinkedin } from 'react-icons/fa'
 import { Icon } from '@chakra-ui/react'
 
 function Footer() {
@@ -15,15 +15,16 @@ function Footer() {
                 h="8vh"
             >
                 <Flex alignItems="center">
-                    <Text fontWeight="bold" fontSize="md" mr={3}>
-                        Connect with us:
-                    </Text>
                     <Button variant="ghost">
                         Facebook <Icon ml={2} as={FaFacebook} />
                     </Button>
 
                     <Button variant="ghost">
                         Instagram <Icon ml={2} as={FaInstagram} />
+                    </Button>
+
+                    <Button variant="ghost">
+                        LinkedIn <Icon ml={2} as={FaLinkedin} />
                     </Button>
 
                     <Button variant="ghost">

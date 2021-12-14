@@ -15,9 +15,8 @@ export default extendTheme({
                 width: '20px',
                 height: '20px',
                 borderRadius: '80%',
-                backgroundColor: 'black',
-                border: '1px solid white',
                 mixBlendMode: 'difference',
+                border: '1px solid white',
                 zIndex: 100,
                 pointerEvents: 'none',
                 transition:
@@ -26,7 +25,9 @@ export default extendTheme({
             '.bigCursor': {
                 width: '100px',
                 height: '100px',
-                backgroundColor: 'white',
+                border: 'none',
+                backgroundColor: 'gray.200',
+                mixBlendMode: 'difference',
             },
         },
     },

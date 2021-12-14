@@ -32,7 +32,7 @@ function Landing({ hover }) {
                     mt={8}
                     mb={7}
                 >
-                    student-run sales experience organization affiliated <br />{' '}
+                    student-run sales experience organisation affiliated <br />
                     with Impression Personalized
                 </Text>
             </Box>
