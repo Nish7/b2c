@@ -17,7 +17,7 @@ export default extendTheme({
                 borderRadius: '80%',
                 mixBlendMode: 'difference',
                 border: '1px solid white',
-                zIndex: 100,
+                zIndex: 999,
                 pointerEvents: 'none',
                 transition:
                     'width 0.3s, height 0.3s, background 0.5s ease-in-out',

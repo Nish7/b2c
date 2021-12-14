@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Landing({ hover }) {
     return (
-        <Box>
+        <Box w={['90%', '90%', 'auto']}>
             <Box
                 onMouseEnter={() => hover(true)}
                 onMouseLeave={() => hover(false)}
@@ -37,14 +37,22 @@ function Landing({ hover }) {
                 </Text>
             </Box>
 
-            <Flex justifyContent="space-evenly" alignItems="center">
+            <Flex
+                justifyContent="space-evenly"
+                alignItems="center"
+                flexDir={['column', 'column', 'row']}
+            >
                 <Link href="/about-us">
-                    <Button w="49%" mr={2}>
+                    <Button
+                        w={['full', '49%', '49%']}
+                        mr={[0, 0, 2]}
+                        mb={[3, 3, 0]}
+                    >
                         About Us
                     </Button>
                 </Link>
                 <Link href="/soon">
-                    <Button w="49%">Our Work</Button>
+                    <Button w={['full', '49%', '49%']}>Our Work</Button>
                 </Link>
             </Flex>
         </Box>
